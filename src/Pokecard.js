@@ -12,7 +12,7 @@ function Pokecard({ id, name, type, base_experience }) {
   return (
     <div className='Pokecard'>
       <h3 className='Pokecard-header'>{name}</h3>
-      <img className='Pokecard-img' src={imgURL(id)} alt=''></img>
+      <img className='Pokecard-img' src={imgURL(id)} alt={name}></img>
       <p className='Pokecard-p'>Type: {type}</p>
       <p className='Pokecard-p'>EXP: {base_experience}</p>
     </div>
