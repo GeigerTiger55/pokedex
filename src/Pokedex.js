@@ -1,12 +1,12 @@
 "use strict";
 
-import Pokecard from './Pokecard' ;
+import Pokecard from './Pokecard';
 /** Accepts array of pokemon in props
  *  Renders a sequence of Pokecard componenets
  */
 function Pokedex({ pokemon }) {
   return (
-    <div>
+    <div className='Pokedex'>
       {pokemon.map((p) => (
         <Pokecard
           id={p.id}
